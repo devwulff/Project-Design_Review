@@ -34,6 +34,7 @@ font-family: 'TiemposHeadline-Semibold';
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /* ################## NAVIGATION #################### */
@@ -268,4 +269,101 @@ footer div p {
 footer div p a {
     text-decoration: none;
     color: #000;
+}
+
+/* ################## MOBILE maxWidth:600px #################### */
+
+@media only screen and (max-width: 600px) {
+
+    /* ################## NAVIGATION #################### */
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding: 5% 0 0 10%;
+        align-self: stretch;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    nav h1 {
+        margin: 5% 0 0 0;
+        font-size: 5rem;
+        align-self: center;
+    }
+
+    nav>a {
+        margin: 5%;
+        align-self: center;
+    }
+
+    /* ################## HEADER #################### */
+    header div {
+        flex-direction: column;
+    }
+
+    header div div {
+        margin: 5% 0 0 0;
+    }
+
+    /* ################## SECTION deliverables #################### */
+
+    .deliverables {
+        flex-direction: column;
+    }
+
+    .deliverables img {
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+
+    /* ################## SECTION howitworks #################### */
+
+    .howitworks {
+        flex-direction: column;
+    }
+
+    .howitworks img {
+        width: 100%;
+    }
+
+    .critique div {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+        height: 60vh;
+    }
+
+    .critique div div {
+        flex-grow: 1;
+        background: 100% 31% / 50% no-repeat url('../img/home_conversion.png'), center top / 150% no-repeat url('../img/28.png');
+    }
+
+    .critique div div p {
+        width: 80%;
+        text-align: center;
+        margin: 35vh 0 0 10%;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* ################## FOOTER #################### */
+
+    footer div {
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    footer div img {
+        align-self: center;
+        width: 30%;
+    }
+
+    footer div p {
+        align-self: center;
+        margin: 5% 0;
+    }
 }
