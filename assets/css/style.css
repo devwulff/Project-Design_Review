@@ -281,8 +281,7 @@ footer div p a {
     }
 
     nav ul {
-        padding: 5% 0 0 10%;
-        align-self: stretch;
+        padding: 5% 0 0 5%;
     }
 
     nav ul li a:hover {
@@ -291,7 +290,6 @@ footer div p a {
 
     nav h1 {
         margin: 5% 0 0 0;
-        font-size: 5rem;
         align-self: center;
     }
 
